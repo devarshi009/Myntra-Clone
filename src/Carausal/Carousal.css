@@ -1,0 +1,13 @@
+
+
+.mainslide1{
+    margin-top: 50px;
+    width:100%;
+    
+    /* border: 1px solid red; */
+  }
+  .imgslide > img{
+    /* width: 100%; */
+    
+     height: 350px; 
+  }
