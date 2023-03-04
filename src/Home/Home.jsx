@@ -278,6 +278,7 @@ import tobi5  from "./trending outfits by influencers/5.jpg";
 import tobi6  from "./trending outfits by influencers/6.jpg";
 import tobi7  from "./trending outfits by influencers/7.jpg";
 import tobi8  from "./trending outfits by influencers/8.jpg";
+import { Link } from "react-router-dom";
 
 // import tp1 from ".//1.jpg";
 // import tp2 from ".//2.jpg";
@@ -289,7 +290,7 @@ import tobi8  from "./trending outfits by influencers/8.jpg";
 // import tp8 from ".//8.jpg";
 const Home = () => {
   return (
-    <Box >
+   <Link to="/products"> <Box >
       <Box  >
        <Center w={{base:"93%",lg:"98%"}}><Carousal /></Center> 
       </Box>
@@ -1367,7 +1368,7 @@ const Home = () => {
         </Box>
         </Grid>
     </Box>
-    </Box>
+    </Box></Link>
     
   );
 };
