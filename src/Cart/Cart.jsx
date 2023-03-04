@@ -12,11 +12,12 @@ const Cart = () => {
   useEffect(() => {
     getData().then((res) => setProducts(res));
   }, []);
+  // console.log(products);
   console.log(products);
   return (
     <div>
       <Box style={{height:"2000px"}}>
-      <Navbar2 />
+      
       <Container maxW={"7xl"} >
         <Flex>
           <Text
@@ -30,18 +31,21 @@ const Cart = () => {
           </Text>
         </Flex>
         <SimpleGrid columns={3} gap={5}>
-          {products.map((e) => (
+          {products?.map((e) => (
+
             <ProductDetail
               key={e.id}
               image={e.Image}
               noIdea={e.Name}
               description={e.Brand}
               price={e.Price}
-              originalPrice={e.OriginalPrice}
+              // originalPrice={e.OriginalPrice}
               // offer={e.offer}
               // id={e.id}
             />
+           
           ))}
+          
         </SimpleGrid>
         <Button>CheckOut</Button>
       </Container>
