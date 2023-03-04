@@ -67,7 +67,7 @@ const Navbar2=() => {
                     onClick={mobileNav.onClose}
                     
                   />
-                  <Link to="/men" w="full"  ZIndex="10000">
+                  <Link to="/products" w="full"  ZIndex="10000">
                     MEN
                   </Link>
                   <Link to="/women"
@@ -126,18 +126,18 @@ const Navbar2=() => {
 
               >
                 
-                <Link to="/men"  size="sm">
+                <Link to="/products"  size="sm">
                   MEN
                 </Link>
                 <Link
-                  to="/women"
+                  to="/products"
                   
                   size="sm"
                 >
                   WOMEN
                 </Link>
                 <Link
-                 to="/kids"
+                 to="/products"
                 
                   size="sm"
                 >
@@ -145,21 +145,24 @@ const Navbar2=() => {
                 </Link>
                 <Link
                  
-                 to="/homeandliving"
+                //  to="/homeandliving"
+                 to="/products"
                   size="sm"
                 >
                 HOME & LIVING
                 </Link>
                 <Link
                  
-                 to="/beauty"
+                //  to="/beauty"
+                 to="/products"
                   size="sm"
                 >
             BEAUTY
                 </Link>
                 <Link
                  
-                 to="/studio"
+                //  to="/studio"
+                 to="/products"
                   size="sm"
                 >
                 STUDIO
