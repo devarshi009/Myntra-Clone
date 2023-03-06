@@ -13,6 +13,7 @@ import Studio from '../STUDIO/Studio'
 import Women from '../Women/Women'
 import ProductDetail from "../Component/ProductDetail" 
 import Cart from '../Cart/Cart'
+import Signup from '../Profile/Signup'
 const AllRoutes = () => {
   return (
     <div>
@@ -29,6 +30,7 @@ const AllRoutes = () => {
         <Route path="/cart" element={<Cart/>}></Route>
         <Route path="/products" element={<Products/>}/>
         <Route path="/products/:id" element={<ProductDetail/>}/>
+        <Route path="/signup" element={<Signup/>}/>
      
         <Route path="*" element={<h3>Page Not Found</h3>}/>
     

@@ -111,7 +111,7 @@ const Navbar2=() => {
               </Box>
                
                
-               <Image src= {logo} w="10%"/> 
+              <Image src= {logo} w="10%"/> 
                 
                
                 
@@ -137,7 +137,7 @@ const Navbar2=() => {
                   WOMEN
                 </Link>
                 <Link
-                 to="/products"
+                 to="/"
                 
                   size="sm"
                 >
@@ -209,7 +209,7 @@ const Navbar2=() => {
         <Link path="/wishlist" to="wishlist"><AiOutlineHeart style={{fontSize:"20",}}/>
           Wishlist
         </Link>
-        <Link path="/bag" to="bag"><BiShoppingBag style={{fontSize:"20",fontWeight:"bolder"}}/>
+        <Link path="/cart" to="cart"><BiShoppingBag style={{fontSize:"20",fontWeight:"bolder"}}/>
           Bag
         </Link>
         

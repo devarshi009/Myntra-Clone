@@ -1,9 +1,12 @@
-import React from 'react'
+// import React from 'react'
+// import Cart from '../Cart/Cart'
 
-const Bag = () => {
-  return (
-    <div>Bag</div>
-  )
-}
+// const Bag = () => {
+//   return (
+//     <div>
+//       <Cart/>
+//     </div>
+//   )
+// }
 
-export default Bag
+// export default Bag
