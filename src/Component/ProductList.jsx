@@ -6,7 +6,7 @@ import styles from "../Styles/ProductList.module.css"
 import { useLocation } from "react-router-dom";
 const ProductList = () => {
   const dispatch = useDispatch();
-  const products = useSelector((store) => store.products);
+  const products = useSelector((store) => store.productsManager.products);
   
   console.log(products);
   useEffect(() => {

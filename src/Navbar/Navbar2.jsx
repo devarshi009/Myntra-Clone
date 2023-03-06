@@ -111,7 +111,7 @@ const Navbar2=() => {
               </Box>
                
                
-              <Link to="/"><Image src= {logo} w="10%"/> </Link> 
+              <Image src= {logo} w="10%"/> 
                 
                
                 
@@ -137,7 +137,7 @@ const Navbar2=() => {
                   WOMEN
                 </Link>
                 <Link
-                 to="/products"
+                 to="/"
                 
                   size="sm"
                 >
