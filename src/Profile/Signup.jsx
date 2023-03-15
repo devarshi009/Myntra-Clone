@@ -17,12 +17,14 @@ import {
     Grid,
     
   } from '@chakra-ui/react';
+ 
   import { Link, useNavigate } from 'react-router-dom';
   import { useState } from 'react';
   import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
   import useToastCompo from "../CustomHook/useToast";
   import { isAllPresent } from "./Signuplogic";
   export default function Signup() {
+   
     const [showPassword, setShowPassword] = useState(false);
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -54,7 +56,7 @@ import {
             console.log(res);
             Toast(res.msg, "success");
             if (res.msg === `Hello! ${name} Your Account is created`) {
-              navigate("/login");
+              navigate("/profile");
             }
           })
           .catch((err) => {
@@ -139,7 +141,7 @@ import {
               
 
              
-              <Link to="/login">
+              <Link to="/profile">
                 <Text mt="20px" textAlign={"center"}>
                   Already have an account? Please sign in
                 </Text>
