@@ -1,6 +1,7 @@
 import React from "react";
 import Carousal from "../Carausal/Carousal";
 import { Box, Center, Flex, Grid, Heading, HStack, Image, Text } from "@chakra-ui/react";
+
 import "./Home.css";
 import d1 from "./deal of the day/1.jpg";
 import d2 from "./deal of the day/2.jpg";
@@ -1368,6 +1369,7 @@ const Home = () => {
         </Box>
         </Grid>
     </Box>
+    
     </Box></Link>
     
   );
