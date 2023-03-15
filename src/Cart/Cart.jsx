@@ -4,6 +4,7 @@ import {
   Center,
   Container,
   Flex,
+  grid,
   Image,
   SimpleGrid,
   Text,
@@ -47,28 +48,39 @@ const Cart = () => {
           </Flex>
           <SimpleGrid columns={3} gap={5}>
             {products == "" ? (
-              <Center>
-                <Spinner
-                  thickness="4px"
-                  speed="0.65s"
-                  emptyColor="gray.200"
-                  color="blue.500"
-                  size="xl"
-                />
-              </Center>
+              <Box
+                style={{
+                
+                  width: "100vw",
+                  height: "80vh",
+                  
+                  alignItems: "center",
+                  marginTop:"200px"
+                }}
+              >
+                {/* <Box> */}
+                
+                    <Spinner
+                      thickness="4px"
+                      speed="0.65s"
+                      emptyColor="gray.200"
+                      color="blue.500"
+                      size="xl"
+                    />
+                
+                {/* </Box> */}
+              </Box>
             ) : (
               products.data.map((e) => (
                 <SimpleGrid key={e._id}>
                   <Image src={e.Image} />
-                  <Box>{e.Price}</Box>
+                  <h1>{e.Price}</h1>
                 </SimpleGrid>
               ))
             )}
           </SimpleGrid>
           <Button>CheckOut</Button>
         </Container>
-
-        {/* <Footer /> */}
       </Box>
     </div>
   );
